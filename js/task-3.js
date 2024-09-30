@@ -1,7 +1,7 @@
 'use strict'
 let sortByDescendingFriendCount = (users) => {
-    let result = users.toSorted((a, b) => a.friends.localeCompare(b.friends));
-    return result;
+  return users.toSorted((a, b) => b.friends.length - a.friends.length);
+
 };
 
 console.log(
